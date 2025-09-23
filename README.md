@@ -1,13 +1,112 @@
-# Sample Hardhat Project
+# ☕ TipJar DApp
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+A decentralized **Tip Jar application** built with **Solidity, Hardhat, React (Vite), TailwindCSS, and Ethers.js**.  
+Users can send small ETH tips, and the contract owner can withdraw them.
 
-Try running some of the following tasks:
+---
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+## ⚡ Tech Stack
+- **Solidity** – Smart contract for storing tips  
+- **Hardhat** – Development framework for Ethereum  
+- **React (Vite)** – Frontend framework  
+- **TailwindCSS** – Styling  
+- **Ethers.js** – Interacting with the smart contract  
+- **MetaMask** – Wallet connection  
+
+---
+
+## 📂 Project Structure
 ```
+TipJarDapp/
+├── contracts/
+│   └── TipJar.sol              # Solidity smart contract
+├── scripts/
+│   └── deploy.js               # Hardhat deployment script
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx             # Main React app
+│   │   ├── abis/TipJar.json    # ABI file (copied after compilation)
+│   │   └── index.css           # TailwindCSS styles
+│   ├── index.html
+│   └── package.json
+├── hardhat.config.js
+└── README.md
+```
+
+---
+
+## 🚀 Setup Instructions
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Usernyagah/tipjar-dapp.git
+cd tipjar-dapp
+```
+
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
+
+### 3️⃣ Compile contracts
+```bash
+npx hardhat compile
+```
+
+### 4️⃣ Deploy contract to Core Testnet
+Update your `.env` with your **private key** and **Core Testnet RPC URL**:
+
+```env
+PRIVATE_KEY=your_wallet_private_key
+CORE_RPC=https://rpc.test.btcs.network
+```
+
+Run the deployment:
+```bash
+npx hardhat run scripts/deploy.js --network coretestnet
+```
+
+You’ll get an output:
+```
+TipJar deployed to: 0x123...abc
+```
+
+Copy this contract address.
+
+---
+
+## 🎨 Frontend Setup
+
+### 5️⃣ Move to frontend folder
+```bash
+cd frontend
+npm install
+```
+
+### 6️⃣ Update contract address
+Open `src/App.jsx` and replace:
+```javascript
+const CONTRACT_ADDRESS = "YOUR_DEPLOYED_CONTRACT_ADDRESS";
+```
+
+with your deployed contract address.
+
+### 7️⃣ Start frontend
+```bash
+npm run dev
+```
+
+Visit **http://localhost:5173** 🎉
+
+---
+
+## 🛠️ Features
+- ✅ Send ETH tips  
+- ✅ Owner can withdraw tips  
+- ✅ Display contract balance  
+- ✅ Simple UI with TailwindCSS  
+
+---
+
+## 📜 License
+MIT License  
