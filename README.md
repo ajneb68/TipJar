@@ -66,9 +66,9 @@ Run the deployment:
 npx hardhat run scripts/deploy.js --network coretestnet
 ```
 
-You’ll get an output:
 ```
-TipJar deployed to: 0x123...abc
+TipJar deployed to: 0xe6751A32Fdb97F35b48A037F6842ef88Be61Ed6B
+
 ```
 
 Copy this contract address.
