@@ -14,3 +14,10 @@ The React Compiler is not enabled on this template. To add it, see [this documen
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Screenshots
+
+Below are screenshots of the TipJar app:
+
+![Screenshot 1](src/assets/Screenshot%20from%202025-09-28%2017-06-11.png)
+![Screenshot 2](src/assets/Screenshot%20from%202025-09-28%2017-06-33.png)

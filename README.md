@@ -108,5 +108,14 @@ Visit **http://localhost:5173** 🎉
 
 ---
 
+## 📸 Screenshots
+
+Below are screenshots of the TipJar app UI:
+
+![Screenshot 1](tipjar/src/assets/Screenshot%20from%202025-09-28%2017-06-11.png)
+![Screenshot 2](tipjar/src/assets/Screenshot%20from%202025-09-28%2017-06-33.png)
+
+---
+
 ## 📜 License
-MIT License  
+MIT License
