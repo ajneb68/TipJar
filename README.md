@@ -39,8 +39,8 @@ TipJarDapp/
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/Usernyagah/tipjar-dapp.git
-cd tipjar-dapp
+git clone https://github.com/ajneb68/TipJar.git
+cd TipJar
 ```
 
 ### 2️⃣ Install dependencies
